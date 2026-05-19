@@ -1,0 +1,1 @@
+(ip.src.country in {"AF" "AQ" "AG" "AR" "AM" "BD" "BY" "BR" "BI" "KH" "CA" "CF" "CL" "CN" "CY" "CZ" "FR" "GR" "HK" "IN" "IR" "IQ" "IL" "IT" "KP" "KR" "LT" "NL" "PK" "PH" "PT" "RU" "ZA" "ES" "CH" "TR" "TM" "UA" "UY" "VE" "VN" "VI" "UG"}))
