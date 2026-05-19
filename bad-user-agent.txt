@@ -1,0 +1,39 @@
+(
+  (lower(http.user_agent) contains "sqlmap") or
+  (lower(http.user_agent) contains "nikto") or
+  (lower(http.user_agent) contains "masscan") or
+  (lower(http.user_agent) contains "nmap") or
+  (lower(http.user_agent) contains "zgrab") or
+  (lower(http.user_agent) contains "slowhttp") or
+  (lower(http.user_agent) contains "hulk") or
+  (lower(http.user_agent) contains "loic") or
+  (lower(http.user_agent) contains "hoic") or
+  (lower(http.user_agent) contains "goldeneye") or
+  (lower(http.user_agent) contains "slowloris") or
+  (lower(http.user_agent) contains "pyloris") or
+  (lower(http.user_agent) contains "httrack") or
+  (lower(http.user_agent) contains "webcopier") or
+  (lower(http.user_agent) contains "webzip") or
+  (lower(http.user_agent) contains "webreaper") or
+  (lower(http.user_agent) contains "teleport") or
+  (lower(http.user_agent) contains "emailcollector") or
+  (lower(http.user_agent) contains "emailsiphon") or
+  (lower(http.user_agent) contains "webemailextract") or
+  (lower(http.user_agent) contains "scanner") or
+  (lower(http.user_agent) contains "havij") or
+  (lower(http.user_agent) contains "acunetix") or
+  (lower(http.user_agent) contains "netsparker") or
+  (lower(http.user_agent) contains "burpsuite") or
+  (lower(http.user_agent) contains "dirbuster") or
+  (lower(http.user_agent) contains "commix") or
+  (lower(http.user_agent) contains "exploit") or
+  (lower(http.user_agent) contains "injection") or
+  (http.user_agent eq "") or
+  (http.user_agent eq "-")
+)
+and not (http.user_agent contains "Googlebot")
+and not (http.user_agent contains "bingbot")
+and not (http.user_agent contains "Slackbot")
+and not (http.user_agent contains "facebookexternalhit")
+
+sqlmap|nikto|masscan|nmap|zgrab|slowhttp|hulk|loic|goldeneye|slowloris|pyloris|httrack|webcopier|webzip|webreaper|teleport|emailcollector|emailsiphon|webemailextract|scanner|havij|acunetix|netsparker|burpsuite|dirbuster|commix|exploit|injection
