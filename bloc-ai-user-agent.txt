@@ -1,0 +1,1 @@
+(http.request.uri.path ne "/robots.txt") and ((http.user_agent contains "ChatGPT-User") or (http.user_agent contains "DuckAssistBot") or (http.user_agent contains "MistralAI-User") or (http.user_agent contains "OAI-SearchBot") or (http.user_agent contains "Perplexity-User") or (http.user_agent contains "PerplexityBot") or (http.user_agent contains "ProRataInc"))
